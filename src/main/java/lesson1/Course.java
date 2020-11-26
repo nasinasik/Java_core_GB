@@ -13,9 +13,9 @@ public class Course {
     }
 
     public static void main(String[] args) {
-       //Course[] course = new Course[4];
-        Course course = new Course();
-        Team[] player = new Team[4];
-        course.doIt(player);
+//       Course[] course = new Course[4];
+//        Course course = new Course();
+//        Team[] player = new Team[4];
+//        course.doIt(player);
     }
 }
