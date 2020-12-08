@@ -1,6 +1,7 @@
 package lesson5;
 
 import java.io.*;
+import java.util.Arrays;
 
 public class CSVfile {
 
@@ -14,8 +15,9 @@ public class CSVfile {
             this.data = data;
         }
 
-        public Table1(String value1, int i, int i1) {
-        }
+
+//        public Table1(String value1) {
+//        }
 
 
         @Override
@@ -29,9 +31,11 @@ public class CSVfile {
 
     public static void main(String[] args) {
         //File file = new File("serialized.table");
-        Table1 table1 = new Table1("Value1", 15, 200);
-        Table1 table2 = new Table1("Value2", 200, 300);
-        Table1 table3 = new Table1("Value3", 400, 500);
+        Table1 table1 = new Table1(new String[]{"Value1"},new int[][]{{100}, {200}, {300}});
+        Table1 table2 = new Table1(new String[]{"Value2"},new int[][]{{400}, {500}, {600}});
+        Table1 table3 = new Table1(new String[]{"Value3"},new int[][]{{700}, {800}, {900}});
+
+
 
 
         try (ObjectOutputStream oos = new ObjectOutputStream(new FileOutputStream("file.csv"))) {
